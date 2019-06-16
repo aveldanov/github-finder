@@ -7,12 +7,30 @@ import axios from 'axios';
 
 
 class App extends Component {
+  state = {
+    users: [],
+    loading: false
+  }
 
-  componentDidMount() {
+
+  async componentDidMount() {
+
+    console.log(process.env.REACT_APP_GITHUB_CLIENT_SECRET);
 
 
+    this.setState({
+      loading: true
+    })
+
+    const res = await axios.get(`https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`);
 
 
+    console.log(res.data);
+
+    this.setState({
+      users: res.data,
+      loading: false
+    })
   }
 
 
@@ -23,7 +41,7 @@ class App extends Component {
       <div className="App" >
         <Navbar />
         <div className="container">
-          <Users />
+          <Users loading={this.state.loading} users={this.state.users} />
         </div>
 
 

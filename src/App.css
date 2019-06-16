@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #6D7993;
+  --primary-color: #3b3a36;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -19,7 +19,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #D5D5D5;
+  background-color: #e9ece5;
   color: #333;
 }
 
@@ -112,8 +112,9 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: #9099A2 1px dotted;
+  border: #3b3a36 1px dotted;
   margin: 0.7rem 0;
+  background-color: #e3e0cf;
 }
 
 /* List */
