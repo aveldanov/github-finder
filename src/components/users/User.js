@@ -26,6 +26,7 @@ export class User extends Component {
 
 
   render() {
+
     console.log(this.props);
 
     const { name, avatar_url, location, bio, blog, login, html_url, followers, following, company, public_repos, public_gists, hireable } = this.props.user;
