@@ -16,7 +16,6 @@ const GithubState = props => {
   const initialState = {
     users: [],
     loading: false,
-    alert: null,
     user: {},
     repos: []
   }
