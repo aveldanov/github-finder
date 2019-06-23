@@ -11,8 +11,6 @@ import User from './components/users/User';
 import GithubState from './context/github/GithubState';
 
 
-
-
 const App = () => {
   // state = {
   //   users: [],
